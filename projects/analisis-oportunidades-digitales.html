@@ -170,41 +170,112 @@
           <article class="audit-block seo-block">
             <header class="block-heading">
               <div><span class="block-number">07</span><p class="eyebrow">SEO on-page</p><h3>Visibilidad basada en intención de búsqueda</h3></div>
-              <p>Una revisión conceptual para conectar arquitectura, páginas y contenidos con la forma en que un usuario busca formación.</p>
+              <p>Auditoría técnica y de rendimiento sobre una web real anonimizada, conectada con decisiones de visibilidad, experiencia móvil y captación.</p>
             </header>
             <div class="evidence-note">
-              <strong>Nivel de evidencia actual</strong>
-              <p>Esta versión presenta el marco estratégico y las hipótesis. La versión definitiva debe incorporar un rastreo real anonimizado y una exportación de keywords con fecha, ubicación y fuente visibles.</p>
+              <strong>Alcance verificable</strong>
+              <p>Rastreo realizado el 8 de junio de 2026 con Screaming Frog SEO Spider 23.0. La licencia gratuita limitó la muestra a 500 recursos, de los cuales 143 eran páginas HTML. Los datos se presentan agregados para preservar la identidad de la organización analizada.</p>
             </div>
-            <div class="seo-panels">
-              <div><span class="source-label">Evidencia propuesta · Screaming Frog</span><h4>7.1 SEO on-page</h4><p>Title, meta description, H1 y H2, URLs, slugs, imágenes y alt text, enlazado interno, duplicidades, indexabilidad, contenido escaso, canibalización e intención de búsqueda.</p></div>
-              <div><span class="source-label">Entregable · Mapa de arquitectura</span><h4>7.3 Arquitectura SEO</h4><p>Home → categorías de Marketing, Diseño e IA → cursos → blog → recursos → casos de alumnos → preguntas frecuentes.</p></div>
-            </div>
+
+            <figure class="evidence-figure">
+              <img src="../assets/evidence/screaming-frog-audit.svg" alt="Resumen anonimizado del rastreo en Screaming Frog: 99 metadescripciones ausentes, 84 imágenes sin texto alternativo, 36 titles largos y 5 errores 404, entre otros hallazgos." loading="lazy" />
+              <figcaption>
+                <span class="source-label">Evidencia 01 · Screaming Frog</span>
+                <div class="evidence-reading">
+                  <div><strong>Qué muestra</strong><p>Incidencias extraídas de las exportaciones de Response Codes, Page Titles, Meta Description, H1 e Images.</p></div>
+                  <div><strong>Lectura</strong><p>El problema principal no es una única etiqueta: existe una deuda distribuida que reduce el control del mensaje, la accesibilidad y la consistencia de páginas clave.</p></div>
+                  <div><strong>Decisión</strong><p>Corregir primero los 404, los H1 ausentes y los snippets de captación; después abordar imágenes, titles y redirecciones mediante plantillas y lotes.</p></div>
+                </div>
+              </figcaption>
+            </figure>
+
             <div class="table-heading">
-              <div><h4>7.2 Mapa estratégico preliminar de keywords</h4><p>Selección por intención y encaje. Volumen, dificultad y CPC quedan pendientes de una exportación verificable.</p></div>
+              <div><h4>7.1 Hallazgos técnicos priorizados</h4><p>La prioridad combina impacto potencial, proximidad a la conversión y facilidad de corrección.</p></div>
+              <span class="table-note">Datos agregados del rastreo</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Problema detectado</th><th>URLs afectadas</th><th>Impacto</th><th>Recomendación</th><th>Prioridad</th></tr></thead>
+                <tbody>
+                  <tr><td>Metadescripción ausente</td><td>99</td><td>Menor control del mensaje que aparece en resultados de búsqueda.</td><td>Redactar snippets únicos y empezar por páginas de oferta formativa.</td><td><span class="priority high">Alta</span></td></tr>
+                  <tr><td>Imágenes sin texto alternativo</td><td>84</td><td>Reduce accesibilidad y contexto semántico de imágenes informativas.</td><td>Describir imágenes útiles y mantener vacío el alt de elementos decorativos.</td><td><span class="priority medium">Media</span></td></tr>
+                  <tr><td>Titles de más de 60 caracteres</td><td>36</td><td>Riesgo de truncado y de diluir la intención principal.</td><td>Priorizar búsqueda, oferta y ubicación en una formulación más directa.</td><td><span class="priority medium">Media</span></td></tr>
+                  <tr><td>H1 ausente</td><td>16</td><td>Jerarquía semántica y comprensión de página menos claras.</td><td>Definir un H1 descriptivo por página indexable, alineado con su intención.</td><td><span class="priority high">Alta</span></td></tr>
+                  <tr><td>Redirecciones internas 3xx</td><td>20</td><td>Saltos evitables en navegación y rastreo.</td><td>Actualizar los enlaces internos para apuntar directamente al destino final.</td><td><span class="priority medium">Media</span></td></tr>
+                  <tr><td>Errores internos 404</td><td>5</td><td>Interrumpen recorridos y pueden afectar páginas vinculadas desde la web.</td><td>Recuperar, redirigir o retirar cada enlace según exista una alternativa equivalente.</td><td><span class="priority high">Alta</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <figure class="evidence-figure evidence-figure-light">
+              <img src="../assets/evidence/pagespeed-mobile.png" alt="Informe móvil de PageSpeed Insights con rendimiento 44, accesibilidad 81, prácticas recomendadas 100 y SEO 92." loading="lazy" />
+              <figcaption>
+                <span class="source-label">Evidencia 02 · PageSpeed Insights · móvil</span>
+                <div class="evidence-reading">
+                  <div><strong>Qué muestra</strong><p>Prueba Lighthouse del 8 de junio de 2026: rendimiento 44, accesibilidad 81, buenas prácticas 100 y SEO 92.</p></div>
+                  <div><strong>Lectura</strong><p>Los datos reales de usuarios superan Core Web Vitals, pero la prueba de laboratorio detecta una primera carga vulnerable: LCP de 12,8 s y 510 ms de bloqueo total.</p></div>
+                  <div><strong>Decisión</strong><p>Reducir recursos que bloquean el renderizado, JavaScript y CSS sin uso; revisar contraste, objetivos táctiles, enlaces sin nombre y jerarquía de encabezados.</p></div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="seo-panels">
+              <div><span class="source-label">Dato de campo · últimos 28 días</span><h4>Core Web Vitals superados</h4><p>LCP 2,2 s, INP 117 ms y CLS 0. La experiencia agregada es estable, aunque el TTFB de 1,4 s y el FCP de 2,1 s dejan margen de mejora.</p></div>
+              <div><span class="source-label">Entregable · Arquitectura</span><h4>7.3 Arquitectura SEO</h4><p>Home → áreas de Marketing, Diseño e IA → programas → contenidos de apoyo → casos de alumnos → preguntas frecuentes y contacto.</p></div>
+            </div>
+
+            <figure class="evidence-figure evidence-figure-light">
+              <img src="../assets/evidence/semrush-keyword-research.png" alt="Captura de Keyword Magic Tool de Semrush para búsquedas de cursos de marketing digital en Valencia, con volumen, intención, dificultad y CPC." loading="lazy" />
+              <figcaption>
+                <span class="source-label">Evidencia 03 · Semrush · España</span>
+                <div class="evidence-reading">
+                  <div><strong>Qué muestra</strong><p>Una familia de 30 términos vinculados a cursos de marketing digital en Valencia: 120 búsquedas mensuales agregadas y dificultad media del 27 %.</p></div>
+                  <div><strong>Lectura</strong><p>La demanda local se reparte entre variantes muy próximas. Crear páginas separadas para cada formulación provocaría solapamiento; deben agruparse por intención.</p></div>
+                  <div><strong>Decisión</strong><p>Construir una única página principal de cursos de marketing en Valencia, reforzada con FAQs y contenidos informativos que capten búsquedas más amplias.</p></div>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="table-heading">
+              <div><h4>7.2 Mapa estratégico de keywords</h4><p>Datos consultados en Semrush para España el 8 de junio de 2026. El volumen es mensual y la dificultad se expresa sobre 100.</p></div>
               <span class="table-note">Desliza horizontalmente en móvil</span>
             </div>
             <div class="table-wrap">
               <table>
                 <thead><tr><th>Keyword</th><th>Intención</th><th>Volumen</th><th>Dificultad</th><th>Página recomendada</th><th>Contenido</th><th>Prioridad</th></tr></thead>
                 <tbody>
-                  <tr><td>curso marketing digital valencia</td><td>Local / transaccional</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Curso de marketing</td><td>Landing local</td><td><span class="priority high">Alta</span></td></tr>
-                  <tr><td>máster marketing digital valencia</td><td>Local / comercial</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Máster de marketing</td><td>Landing + FAQ</td><td><span class="priority high">Alta</span></td></tr>
-                  <tr><td>curso diseño gráfico valencia</td><td>Local / transaccional</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Curso de diseño</td><td>Landing local</td><td><span class="priority high">Alta</span></td></tr>
-                  <tr><td>curso inteligencia artificial valencia</td><td>Local / comercial</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Curso de IA</td><td>Landing + temario</td><td><span class="priority high">Alta</span></td></tr>
-                  <tr><td>formación inteligencia artificial online</td><td>Comercial</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Categoría IA online</td><td>Hub comparativo</td><td><span class="priority medium">Media</span></td></tr>
-                  <tr><td>escuela marketing digital online</td><td>Comercial</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Home / categoría</td><td>Página de oferta</td><td><span class="priority medium">Media</span></td></tr>
-                  <tr><td>curso wordpress valencia</td><td>Local / transaccional</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Curso WordPress</td><td>Landing específica</td><td><span class="priority medium">Media</span></td></tr>
-                  <tr><td>curso seo sem valencia</td><td>Local / transaccional</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Curso SEO/SEM</td><td>Landing específica</td><td><span class="priority medium">Media</span></td></tr>
-                  <tr><td>estudiar marketing digital</td><td>Informacional / comercial</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Guía del blog</td><td>Artículo extenso</td><td><span class="priority high">Alta</span></td></tr>
-                  <tr><td>formación diseño y marketing</td><td>Comercial</td><td><span class="pending-data">Por validar</span></td><td><span class="pending-data">Por validar</span></td><td>Comparador de áreas</td><td>Guía de decisión</td><td><span class="priority low">Baja</span></td></tr>
+                  <tr><td>estudiar marketing digital</td><td>Comercial</td><td>590</td><td>46</td><td>Guía de orientación</td><td>Salidas, itinerarios y criterios de elección</td><td><span class="priority high">Alta</span></td></tr>
+                  <tr><td>marketing digital valencia</td><td>Comercial mixta</td><td>590</td><td>42</td><td>Hub de área</td><td>Guía local con acceso a programas</td><td><span class="priority medium">Media</span></td></tr>
+                  <tr><td>master marketing digital valencia</td><td>Comercial</td><td>170</td><td>21</td><td>Máster de marketing</td><td>Landing local, temario y FAQ</td><td><span class="priority high">Alta</span></td></tr>
+                  <tr><td>curso diseño grafico valencia</td><td>Comercial</td><td>50</td><td>12</td><td>Curso de diseño</td><td>Landing local y portfolio de alumnos</td><td><span class="priority high">Alta</span></td></tr>
+                  <tr><td>curso inteligencia artificial valencia</td><td>Comercial</td><td>50</td><td>44</td><td>Curso de IA</td><td>Landing, temario y aplicaciones prácticas</td><td><span class="priority high">Alta</span></td></tr>
+                  <tr><td>cursos marketing digital valencia</td><td>Comercial</td><td>30</td><td>27</td><td>Categoría de marketing</td><td>Comparador de programas y modalidades</td><td><span class="priority high">Alta</span></td></tr>
+                  <tr><td>curso marketing digital valencia</td><td>Por clasificar</td><td>20</td><td><span class="pending-data">Sin datos</span></td><td>Misma categoría de marketing</td><td>Variante integrada, no una URL adicional</td><td><span class="priority medium">Media</span></td></tr>
                 </tbody>
               </table>
             </div>
+            <div class="evidence-note keyword-conclusion">
+              <strong>Conclusión estratégica</strong>
+              <p>El volumen por sí solo no decide la arquitectura. “Marketing digital Valencia” tiene demanda alta, pero comparte resultados con agencias y consultoras; necesita validación SERP y un contenido de orientación. En cambio, “master marketing digital Valencia” y las consultas de curso expresan una intención formativa más clara y justifican páginas de programa.</p>
+            </div>
+
+            <figure class="evidence-figure evidence-figure-light">
+              <img src="../assets/evidence/semrush-organic-overview.png" alt="Resumen anonimizado de Semrush con 1,9 mil palabras clave, 1,2 mil visitas orgánicas estimadas, 182 visitas de marca y 1.000 sin marca." loading="lazy" />
+              <figcaption>
+                <span class="source-label">Evidencia 04 · Semrush Organic Research · España</span>
+                <div class="evidence-reading">
+                  <div><strong>Qué muestra</strong><p>Estimación de 1.923 keywords posicionadas y 1.193 visitas orgánicas mensuales, con una variación reciente del −51,5 %.</p></div>
+                  <div><strong>Lectura</strong><p>La mayor parte del tráfico estimado es no branded: 1.000 visitas frente a 182 de marca. La visibilidad depende especialmente de búsquedas genéricas y es sensible a pérdidas de posición.</p></div>
+                  <div><strong>Decisión</strong><p>Identificar URLs y consultas que concentran la caída, revisar cambios técnicos o de contenido y validar la tendencia con Google Search Console antes de atribuir causas.</p></div>
+                </div>
+                <p class="evidence-caveat">Semrush ofrece estimaciones externas. Se utilizan para detectar señales y formular preguntas; los datos propietarios de Search Console y Analytics serían la fuente de validación.</p>
+              </figcaption>
+            </figure>
+
             <div class="evidence-grid">
-              <article><span>Captura 01</span><strong>Rastreo técnico anonimizado</strong><p>Overview y pestañas de Internal, Response Codes, Page Titles, Meta Description, H1 e Images.</p></article>
-              <article><span>Captura 02</span><strong>Exportación de keywords</strong><p>Ubicación España o Valencia, fecha, volumen, intención, dificultad, CPC y tendencia.</p></article>
-              <article><span>Captura 03</span><strong>Comprobación SERP</strong><p>Resultados relevantes, tipos de competidor, features y páginas que Google prioriza para cada intención.</p></article>
+              <article><span>Completado</span><strong>Rastreo técnico</strong><p>Exportaciones reales de Screaming Frog, resumidas y anonimizadas con alcance y fecha visibles.</p></article>
+              <article><span>Completado</span><strong>Rendimiento móvil</strong><p>Datos de campo y laboratorio de PageSpeed Insights interpretados desde UX y captación.</p></article>
+              <article><span>Completado</span><strong>Investigación de keywords</strong><p>Volumen, intención, dificultad y CPC revisados en Semrush España y agrupados por intención para evitar canibalización.</p></article>
             </div>
             <div class="content-ideas">
               <div>
@@ -259,7 +330,7 @@
           </div>
 
           <div class="table-heading">
-            <div><h3>Matriz de oportunidades priorizadas</h3><p>Hipótesis de trabajo que deberían validarse durante una auditoría real.</p></div>
+            <div><h3>Matriz de oportunidades priorizadas</h3><p>Combina hallazgos verificados de herramientas con hipótesis de UX y conversión que requieren validación adicional.</p></div>
           </div>
           <div class="table-wrap">
             <table>
@@ -516,24 +587,31 @@
           </article>
 
           <div class="metricool-ai-grid">
-            <article><span class="block-number">08</span><p class="eyebrow">Metricool</p><h3>Planificación y aprendizaje mensual</h3><ol><li>Centralizar el calendario y los estados.</li><li>Programar publicaciones por canal.</li><li>Revisar mejores horas con contexto.</li><li>Comparar engagement y formatos.</li><li>Detectar piezas con mayor rendimiento.</li><li>Generar informes útiles para el equipo.</li><li>Decidir ajustes para el mes siguiente.</li></ol></article>
+            <article><span class="block-number">08</span><p class="eyebrow">Metricool</p><h3>Del calendario editorial a un ciclo medible</h3><ol><li>Cargar las piezas aprobadas con canal, formato, copy y URL etiquetada.</li><li>Programar solo después de validar tono, creatividad y permisos.</li><li>Usar mejores horas como referencia, no como regla automática.</li><li>Comparar cada formato contra su propio objetivo.</li><li>Relacionar clics y sesiones con las campañas UTM.</li><li>Documentar aprendizajes y decisiones del cierre mensual.</li></ol></article>
             <article><span class="block-number">09</span><p class="eyebrow">IA aplicada</p><h3>Apoyo operativo, no sustitución del criterio</h3><p>Investigación inicial, ideación, variaciones de copy, adaptación de tono, prompts, clasificación, resumen de aprendizajes y propuestas para el siguiente ciclo.</p><div class="human-review"><strong>Revisión humana</strong><p>Toda propuesta generada con IA debe pasar por revisión estratégica, adaptación al tono de marca, comprobación de datos y validación final antes de publicarse.</p></div></article>
           </div>
 
-          <article class="dashboard-section">
-            <header class="block-heading"><div><span class="block-number">10</span><p class="eyebrow">Sistema de medición</p><h3>Dashboard conceptual del mes</h3></div><p>El objetivo no es acumular métricas, sino conectar contenido, tráfico y captación.</p></header>
-            <div class="dashboard">
-              <div class="kpi"><span>Alcance</span><strong>—</strong><small>Descubrimiento</small></div>
-              <div class="kpi"><span>Engagement</span><strong>—</strong><small>Interés activo</small></div>
-              <div class="kpi"><span>Clics</span><strong>—</strong><small>Tráfico generado</small></div>
-              <div class="kpi accent-kpi"><span>Leads</span><strong>—</strong><small>Conversión</small></div>
-              <div class="chart-card">
-                <div class="chart-head"><strong>Rendimiento por formato</strong><span>Reels · Carruseles · Email · Blog</span></div>
-                <div class="bar-chart"><div style="--value:82%"><span>Reels</span></div><div style="--value:68%"><span>Carruseles</span></div><div style="--value:54%"><span>Email</span></div><div style="--value:62%"><span>Blog</span></div></div>
-                <small>Valores ilustrativos para representar la visualización, no resultados reales.</small>
+          <figure class="evidence-figure metricool-evidence">
+            <img src="../assets/evidence/metricool-planner-status.png" alt="Pantalla real de planificación de Metricool antes de conectar los perfiles sociales de la marca." loading="lazy" />
+            <figcaption>
+              <span class="source-label">Evidencia 05 · Metricool · estado de implementación</span>
+              <div class="evidence-reading">
+                <div><strong>Qué muestra</strong><p>La marca y el entorno de planificación están creados, pero aún no hay perfiles sociales conectados.</p></div>
+                <div><strong>Lectura</strong><p>Sin conexiones no existen publicaciones, mejores horas ni métricas atribuibles. El calendario de 30 días es una propuesta editorial, no actividad ejecutada.</p></div>
+                <div><strong>Siguiente acción</strong><p>Conectar los canales con autorización, cargar primero una semana piloto y validar nomenclatura, UTMs, permisos y flujo de aprobación antes de programar el mes.</p></div>
               </div>
-              <div class="insight-card"><strong>Lecturas del dashboard</strong><ul><li>Contenido y formato con mejor rendimiento</li><li>Temas que despiertan más interés</li><li>Tráfico a landing</li><li>Conversión por canal</li><li>Guardados, comentarios e impresiones</li></ul></div>
+            </figcaption>
+          </figure>
+
+          <article class="dashboard-section">
+            <header class="block-heading"><div><span class="block-number">10</span><p class="eyebrow">Sistema de medición</p><h3>Qué medir y qué decisión habilita</h3></div><p>Las métricas se definen antes de publicar. No se presentan resultados hasta disponer de datos reales.</p></header>
+            <div class="measurement-grid">
+              <article><span>Descubrimiento</span><strong>Alcance, impresiones y retención</strong><p>Permiten detectar temas y aperturas capaces de captar atención, sin confundir visibilidad con intención de compra.</p></article>
+              <article><span>Interés</span><strong>Guardados, respuestas y comentarios</strong><p>Ayudan a distinguir contenido útil de contenido simplemente visto y a recoger objeciones del público.</p></article>
+              <article><span>Tráfico</span><strong>Clics, CTR y sesiones por UTM</strong><p>Relacionan cada pieza con visitas reales a la guía, programa o landing correspondiente.</p></article>
+              <article><span>Conversión</span><strong>Descargas, solicitudes y tasa de lead</strong><p>Permiten valorar si el contenido acompaña la decisión y no solo genera interacción dentro de la red.</p></article>
             </div>
+            <div class="measurement-rule"><strong>Criterio de comparación</strong><p>Reels contra retención y alcance; carruseles contra guardados; blog contra tráfico orgánico y recorrido; email contra CTR y conversión. Comparar todos los formatos con una única métrica produciría conclusiones engañosas.</p></div>
           </article>
 
           <article class="improvement-section">
