@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Comparación de siete palabras clave en Semrush España</title>
+  <desc id="desc">Las mismas siete palabras clave incluidas en el mapa estratégico, con intención, volumen mensual y dificultad.</desc>
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="46" y="54" fill="#ff642d" font-size="13" font-weight="800">SEMRUSH · ANÁLISIS GRUPAL · ESPAÑA</text>
+    <text x="46" y="94" fill="#171a22" font-size="31" font-weight="800">Las mismas keywords que aparecen en el mapa estratégico</text>
+    <text x="46" y="124" fill="#667085" font-size="14">Consulta realizada el 08/06/2026 · Volumen mensual estimado · Dificultad sobre 100</text>
+
+    <g transform="translate(46 154)">
+      <rect width="1108" height="472" rx="8" fill="#fff" stroke="#d8dde7"/>
+      <rect width="1108" height="52" rx="8" fill="#f5f6f8"/>
+      <text x="20" y="32" fill="#667085" font-size="12" font-weight="800">GRUPO</text>
+      <text x="170" y="32" fill="#667085" font-size="12" font-weight="800">PALABRA CLAVE EXACTA</text>
+      <text x="650" y="32" fill="#667085" font-size="12" font-weight="800">INTENCIÓN</text>
+      <text x="852" y="32" fill="#667085" font-size="12" font-weight="800">VOLUMEN</text>
+      <text x="997" y="32" fill="#667085" font-size="12" font-weight="800">KD %</text>
+
+      <g font-size="15">
+        <text x="20" y="91" fill="#2563eb" font-size="12" font-weight="800">ORIENTACIÓN</text>
+        <text x="170" y="91" fill="#202633" font-weight="700">estudiar marketing digital</text>
+        <text x="650" y="91" fill="#725600">Comercial</text>
+        <text x="870" y="91" fill="#171a22" font-size="20" font-weight="800">590</text>
+        <text x="1010" y="91" fill="#171a22" font-size="20" font-weight="800">46</text>
+
+        <text x="20" y="151" fill="#7c3aed" font-size="12" font-weight="800">TEMA LOCAL</text>
+        <text x="170" y="151" fill="#202633" font-weight="700">marketing digital valencia</text>
+        <text x="650" y="151" fill="#725600">Comercial mixta</text>
+        <text x="870" y="151" fill="#171a22" font-size="20" font-weight="800">590</text>
+        <text x="1010" y="151" fill="#171a22" font-size="20" font-weight="800">42</text>
+
+        <text x="20" y="211" fill="#047857" font-size="12" font-weight="800">PROGRAMA</text>
+        <text x="170" y="211" fill="#202633" font-weight="700">master marketing digital valencia</text>
+        <text x="650" y="211" fill="#725600">Comercial</text>
+        <text x="870" y="211" fill="#171a22" font-size="20" font-weight="800">170</text>
+        <text x="1010" y="211" fill="#171a22" font-size="20" font-weight="800">21</text>
+
+        <text x="20" y="271" fill="#047857" font-size="12" font-weight="800">PROGRAMA</text>
+        <text x="170" y="271" fill="#202633" font-weight="700">curso diseño grafico valencia</text>
+        <text x="650" y="271" fill="#725600">Comercial</text>
+        <text x="870" y="271" fill="#171a22" font-size="20" font-weight="800">50</text>
+        <text x="1010" y="271" fill="#171a22" font-size="20" font-weight="800">12</text>
+
+        <text x="20" y="331" fill="#047857" font-size="12" font-weight="800">PROGRAMA</text>
+        <text x="170" y="331" fill="#202633" font-weight="700">curso inteligencia artificial valencia</text>
+        <text x="650" y="331" fill="#725600">Comercial</text>
+        <text x="870" y="331" fill="#171a22" font-size="20" font-weight="800">50</text>
+        <text x="1010" y="331" fill="#171a22" font-size="20" font-weight="800">44</text>
+
+        <text x="20" y="391" fill="#047857" font-size="12" font-weight="800">CATEGORÍA</text>
+        <text x="170" y="391" fill="#202633" font-weight="700">cursos marketing digital valencia</text>
+        <text x="650" y="391" fill="#725600">Comercial</text>
+        <text x="870" y="391" fill="#171a22" font-size="20" font-weight="800">30</text>
+        <text x="1010" y="391" fill="#171a22" font-size="20" font-weight="800">27</text>
+
+        <text x="20" y="451" fill="#047857" font-size="12" font-weight="800">CATEGORÍA</text>
+        <text x="170" y="451" fill="#202633" font-weight="700">curso marketing digital valencia</text>
+        <text x="650" y="451" fill="#98a2b3">Sin clasificar</text>
+        <text x="870" y="451" fill="#171a22" font-size="20" font-weight="800">20</text>
+        <text x="1010" y="451" fill="#98a2b3" font-size="15" font-weight="700">n/d</text>
+      </g>
+
+      <g stroke="#e5e7eb">
+        <line x1="0" y1="112" x2="1108" y2="112"/>
+        <line x1="0" y1="172" x2="1108" y2="172"/>
+        <line x1="0" y1="232" x2="1108" y2="232"/>
+        <line x1="0" y1="292" x2="1108" y2="292"/>
+        <line x1="0" y1="352" x2="1108" y2="352"/>
+        <line x1="0" y1="412" x2="1108" y2="412"/>
+      </g>
+    </g>
+
+    <rect x="46" y="644" width="7" height="7" rx="2" fill="#ff642d"/>
+    <text x="66" y="652" fill="#667085" font-size="13">Resumen visual fiel al análisis grupal de Semrush; no mezcla resultados de concordancia amplia.</text>
+  </g>
+</svg>
