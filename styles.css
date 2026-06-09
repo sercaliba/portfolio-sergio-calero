@@ -1485,7 +1485,7 @@ tbody tr:hover td { background: rgba(255,255,255,.025); }
 .propulsia-v3 .eyebrow { color: #8f4e00; }
 .propulsia-v3 .eyebrow.light { color: #ffc85f; }
 .p3-hero {
-  min-height: calc(100svh - var(--header));
+  min-height: calc(100svh - var(--header) - 48px);
   padding: 48px 0 0;
   color: #fff;
   background:
