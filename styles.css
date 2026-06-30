@@ -4219,7 +4219,9 @@ details p {
 }
 
 .work-secondary--project {
-  background: var(--white);
+  background:
+    linear-gradient(135deg, rgba(200, 164, 107, 0.12), transparent 48%),
+    #f7efe1;
 }
 
 .work-secondary--service {
