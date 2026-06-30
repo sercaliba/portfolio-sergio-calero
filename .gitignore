@@ -1,0 +1,9 @@
+# Artefactos de trabajo / contexto — no publicar
+claude_context_pack/
+claude_context_pack.zip
+design-prototypes/
+docs/
+
+# Sistema
+.DS_Store
+Thumbs.db
